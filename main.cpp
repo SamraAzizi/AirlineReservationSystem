@@ -63,6 +63,7 @@ void mainMenu(){
             }
 
         case 3:
+        {
             cout<<"___________________GET YOUR TICKET___________________\n"<<endl;
             t.Bill();
 
@@ -72,8 +73,32 @@ void mainMenu(){
             cin>>back;
 
                 if(back==1){
-                    t.Display
+                    t.Display();
+                    cout<<"Press Any Key To Go Back To Main Menu:";
+                    cin>>back;
+                    if(back==1){
+                        mainMenu();
+                    }
+                    else{
+                        mainMenu();
+                    }
                 }
+                else{
+                    mainMenu();
+                }
+                break;
+            }
+
+            case 4:
+            {
+                cout<<"\n\n\t____________Thank You_________________"<<endl;
+                break;
+            }
+
+            default:{
+                cout<<"Invalid Input, Please Try Again!\n"<<endl;
+            }
+
     }
 
 
