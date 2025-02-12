@@ -14,6 +14,17 @@ class Management{
     }
 };
 
+
+class Details{
+    public:
+        static string name, gender;
+        int phoneNo;
+        int age;
+        string add;
+        static int cId;
+    
+}
+
 void mainMenu(){
     int lchoice;
     int schoice;
@@ -97,6 +108,8 @@ void mainMenu(){
 
             default:{
                 cout<<"Invalid Input, Please Try Again!\n"<<endl;
+                mainMenu();
+                break;
             }
 
     }
