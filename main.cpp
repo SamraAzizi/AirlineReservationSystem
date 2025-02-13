@@ -22,7 +22,38 @@ class Details{
         int age;
         string add;
         static int cId;
+        char arr[100];
+
+        void information{
+            cout<<"\nEnter The Customer ID: ";
+            cin>>cId
+            cout<<"\nEnter The Name: ";
+            cin>>name;
+            cout<<"\nEnter The Age: ";
+            cin>>age;
+            cout<<"\nEnter The Address: ";
+            cin>>add;
+            cout<<"\nGender: ";
+            cin>>gender;
+            cout<<"\nYour Details Are Saved! \n"<<endl;
+
+
+        }
     
+};
+
+int Details::cId;
+string Details::name;
+string Details::gender;
+
+
+class Registration{
+    public:
+        static int Choice;
+        int choice1;
+        int back;
+        static float Charges;
+        
 }
 
 void mainMenu(){
