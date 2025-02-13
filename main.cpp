@@ -53,7 +53,20 @@ class Registration{
         int choice1;
         int back;
         static float Charges;
-        
+
+        void flights(){
+            string flightN[]={"Pakistan", "Canada", "India", "America", "england", "china","japan"};
+            for(int a = 0;a<7;a++){
+                cout<<(a+1)<<".flight to "<<flightN[a]<<endl;
+
+            }
+            cout<<"\nWelcome To The Airlines! "<<endl;
+            cout<<"Press The Number Of THe Country Of Which You Want To Book The Flight! ";
+            cin>>Choice;
+
+            
+        }
+
 }
 
 void mainMenu(){
