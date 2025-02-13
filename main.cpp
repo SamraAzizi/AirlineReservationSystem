@@ -64,7 +64,35 @@ class Registration{
             cout<<"Press The Number Of THe Country Of Which You Want To Book The Flight! ";
             cin>>Choice;
 
-            
+            switch(choice){
+                case 1:
+                {
+                    cout<<"__________________Welcome To Pakistan__________________\n"<<endl;
+
+                    cout<<"Your Comfort Is Our Priority. Enjoy The Journey!"<<endl;
+
+                    cout<<"Following Are The Flights\n"<<endl;
+
+                    cout<<"1. PAK - 434"<<endl;
+                    cout<<"\t01-01-2024 8:00AM 10hrs Rs. 1200"<<endl;
+
+                    cout<<"1. PAK - 434"<<endl;
+                    cout<<"\t04-01-2024 9:00AM 10hrs Rs. 1400"<<endl;
+
+                    cout<<"1. PAK - 434"<<endl;
+                    cout<<"\t04-01-2024 8:00AM 10hrs Rs. 1900"<<endl;
+
+                    cout<<"\n Select The Flight You Want To Book: ";
+                    cin>>choice1;
+
+                    if(choice1==1){
+                        char
+                    }
+                
+                }
+            }
+
+
         }
 
 }
