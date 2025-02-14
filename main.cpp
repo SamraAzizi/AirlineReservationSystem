@@ -67,29 +67,107 @@ class Registration{
             switch(choice){
                 case 1:
                 {
-                    cout<<"__________________Welcome To Pakistan__________________\n"<<endl;
+                    cout<<"__________________Welcome To Pakistan Ailines__________________\n"<<endl;
 
                     cout<<"Your Comfort Is Our Priority. Enjoy The Journey!"<<endl;
 
                     cout<<"Following Are The Flights\n"<<endl;
 
                     cout<<"1. PAK - 434"<<endl;
-                    cout<<"\t01-01-2024 8:00AM 10hrs Rs. 1200"<<endl;
+                    cout<<"\t01-01-2024 8:00AM 10hrs Rs. 14000"<<endl;
 
-                    cout<<"1. PAK - 434"<<endl;
-                    cout<<"\t04-01-2024 9:00AM 10hrs Rs. 1400"<<endl;
+                    cout<<"2. PAK - 414"<<endl;
+                    cout<<"\t04-01-2024 9:00AM 10hrs Rs. 100000"<<endl;
 
-                    cout<<"1. PAK - 434"<<endl;
-                    cout<<"\t04-01-2024 8:00AM 10hrs Rs. 1900"<<endl;
+                    cout<<"3. PAK - 934"<<endl;
+                    cout<<"\t04-01-2024 8:00AM 10hrs Rs. 9000"<<endl;
 
                     cout<<"\n Select The Flight You Want To Book: ";
                     cin>>choice1;
 
                     if(choice1==1){
-                        char
+                        Charges = 14000;
+                        cout<<"you have successfully book the flight 1. PAK - 434"<<endl;
+                        cout<<"You can go back to menu and take the ticket"<<endl;
+                    }
+
+                    else if(choice1==2){
+                        Charges=100000;
+                        cout<<"you have successfully book the flight 2. PAK - 414"<<endl;
+                        cout<<"you can go back to menu and take the ticket"<<endl;
+
+                    }else if(choice1==3){
+                        charges=9000;
+                        cout<<"you have successfully book the flight 3. PAK - 934"<<endl;
+                        cout<<"you can go back to menu and take the ticket"<<endl;
+                    }
+                    else{
+                        cout<<"Invalid input , shiftting to previous menu"<<endl;
+                        flights();
+                    }
+                    cout<<"Press any key to go back to the main menu: "<<endl;
+                    cin>>back;
+
+
+                    if(back==1){
+                        mainMenu();
+                    }else{
+                        mainMenu();
                     }
                 
                 }
+            }
+            case 2:{
+                cout<<"__________________Welcome To Canadian Airlines__________________\n"<<endl;
+
+                cout<<"Your Comfort Is Our Priority. Enjoy The Journey!"<<endl;
+
+                cout<<"Following Are The Flights\n"<<endl;
+
+                cout<<"1. CA - 431"<<endl;
+                cout<<"\t01-01-2024 8:00AM 10hrs Rs. 12000"<<endl;
+
+                cout<<"2. CA - 114"<<endl;
+                cout<<"\t04-01-2024 9:00AM 10hrs Rs. 100000"<<endl;
+
+                cout<<"3. CA - 222"<<endl;
+                cout<<"\t04-01-2024 8:00AM 10hrs Rs. 90000"<<endl;
+
+                cout<<"\n Select The Flight You Want To Book: ";
+                cin>>choice1;
+
+                if(choice1==1){
+                    Charges = 12000;
+                    cout<<"you have successfully book the flight 1. CA - 431"<<endl;
+                    cout<<"You can go back to menu and take the ticket"<<endl;
+                }
+
+                else if(choice1==2){
+                    Charges=100000;
+                    cout<<"you have successfully book the flight 2. CA - 114"<<endl;
+                    cout<<"you can go back to menu and take the ticket"<<endl;
+
+                }else if(choice1==3){
+                    charges=90000;
+                    cout<<"you have successfully book the flight 3. CA - 222"<<endl;
+                    cout<<"you can go back to menu and take the ticket"<<endl;
+                }
+                else{
+                    cout<<"Invalid input , shiftting to previous menu"<<endl;
+                    flights();
+                }
+                cout<<"Press any key to go back to the main menu: "<<endl;
+                cin>>back;
+
+
+                if(back==1){
+                    mainMenu();
+                }else{
+                    mainMenu();
+                }
+            
+            }
+
             }
 
 
