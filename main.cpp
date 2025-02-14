@@ -55,7 +55,7 @@ class Registration{
         static float Charges;
 
         void flights(){
-            string flightN[]={"Pakistan", "Canada", "India", "America", "england", "china","japan"};
+            string flightN[]={"Pakistan", "Canada", "India", "America"};
             for(int a = 0;a<7;a++){
                 cout<<(a+1)<<".flight to "<<flightN[a]<<endl;
 
@@ -167,13 +167,49 @@ class Registration{
                 }
             
             }
+            case 3:
+            {
+                cout<<"__________________Welcome To India Airlines__________________\n"<<endl;
+
+                cout<<"Your Comfort Is Our Priority. Enjoy The Journey!"<<endl;
+
+                cout<<"Following Are The Flights\n"<<endl;
+
+                cout<<"1. IND - 431"<<endl;
+                cout<<"\t01-01-2024 8:00AM 10hrs Rs. 12000"<<endl;
+
+                cout<<"2. IND - 114"<<endl;
+                cout<<"\t04-01-2024 9:00AM 10hrs Rs. 100000"<<endl;
+
+                cout<<"3. IND - 222"<<endl;
+                cout<<"\t04-01-2024 8:00AM 10hrs Rs. 90000"<<endl;
+
+                cout<<"\n Select The Flight You Want To Book: ";
+                cin>>choice1;
+
+                if(choice1==1){
+                    Charges = 12000;
+                    cout<<"you have successfully book the flight 1. IND - 431"<<endl;
+                    cout<<"You can go back to menu and take the ticket"<<endl;
+                }
+
+                
+
+
+                if(back==1){
+                    mainMenu();
+                }else{
+                    mainMenu();
+                }
+
+            }
 
             }
 
 
         }
 
-}
+
 
 void mainMenu(){
     int lchoice;
