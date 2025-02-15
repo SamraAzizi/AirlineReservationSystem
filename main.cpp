@@ -253,11 +253,37 @@ class Registration{
                 }else{
                     mainMenu();
                 }
+                default:
+                {
+                    cout<<"Invalid input, Shifting you to the main mneu"<<endl;
+                    mainMenu();
+                    break;
+                }
             
             }
 
 
-        }
+        };
+
+
+float registration::charges;
+int registration::choice;
+
+
+class ticket : public registration, Details{
+    public:
+    void Bill(){
+        string destination=" ";
+        ofstream outf("records.txt");
+        {
+            outf<<"________________XYZ Airlines____________"<<endl;
+            outf<<"________________Ticket_________________"<<endl;
+            outf<<"_________________________________________"<<endl;
+
+            outf<<"Customer ID:"<<Details
+        } 
+    }
+}
 
 
 
