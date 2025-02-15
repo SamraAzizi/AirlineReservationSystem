@@ -280,7 +280,23 @@ class ticket : public registration, Details{
             outf<<"________________Ticket_________________"<<endl;
             outf<<"_________________________________________"<<endl;
 
-            outf<<"Customer ID:"<<Details
+            outf<<"Customer ID:"<<Details::cId<<endl;
+            outf<<"Customer Name:"<<Details::name<<endl;
+            outf<<"Customer Gender:"<<Details::gender<<endl;
+            outf<<"\tDescription"<<endl<<endl;
+
+            if(registration::choice==1){
+                destination="Pakistan";
+            }
+            if(registration::choice==2){
+                destination="Pakistan";
+            }
+            if(registration::choice==3){
+                destination="Pakistan";
+            }
+            if(registration::choice==4){
+                destination="Pakistan";
+            }
         } 
     }
 }
