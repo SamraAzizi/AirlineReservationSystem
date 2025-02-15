@@ -303,6 +303,16 @@ class ticket : public registration, Details{
         } 
         outf.close();
     }
+    void dispBill(){
+        ifstream ifs("records.txt");
+
+        {
+            if(ifs){
+                cout<<"File error!"<<endl;
+            }
+            while(ifs.eof)
+        }
+    }
 }
 
 
