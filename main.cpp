@@ -289,15 +289,19 @@ class ticket : public registration, Details{
                 destination="Pakistan";
             }
             if(registration::choice==2){
-                destination="Pakistan";
+                destination="Canada";
             }
             if(registration::choice==3){
-                destination="Pakistan";
+                destination="India";
             }
             if(registration::choice==4){
-                destination="Pakistan";
+                destination="USA";
             }
+            out<<"Destination\t\t"<<destination<<endl;
+            out<<"Flight Cost: \t\t"<<registration::charges<<endl;
+
         } 
+        outf.close();
     }
 }
 
